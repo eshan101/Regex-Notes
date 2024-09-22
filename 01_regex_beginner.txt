@@ -70,11 +70,15 @@ Let's dive deep into the beginner-level regular expression (regex) concepts. I'l
      
      - Matches a single digit, such as "5", "9", etc.
 
+   - `\D` : Matches anything except digits. It is negation of `\d`
+
    - `\w`: Matches any word character (letters, digits, and underscores), equivalent to `[a-zA-Z0-9_]`.
    
      Example: \w
      
      - Matches any single alphanumeric character or underscore, like "A", "4", "_", etc.
+
+   - `\W` : Matches anything except word characters that are matched by `\w`. It is negation of `\w`
 
    - `\s`: Matches any whitespace character (spaces, tabs, line breaks).
    
@@ -82,12 +86,22 @@ Let's dive deep into the beginner-level regular expression (regex) concepts. I'l
      
      - Matches any space, tab, or newline character.
 
+   - `\S` : Matches anything except whitespace character. It is negation of `\s`
+
+
    Negating a character class:
    - `[^abc]`: Matches any character except 'a', 'b', or 'c'.
    
      Example: [^abc]
      
      - Matches any character that is not "a", "b", or "c".
+
+   - `\b` : Matches every word Boundary
+
+      Suppose '|' denotes word boundary then, you can match all word boundaries using '\b'.
+      example : "Hello| |my| |name| |is| |emu"
+
+   - `\B` : Not word boundary 
 
 ---
 
@@ -135,6 +149,7 @@ Let's dive deep into the beginner-level regular expression (regex) concepts. I'l
 6. Escaping Special Characters
    Some characters in regex (like `.` or `*`) have special meanings, and if you want to match them literally, you need to "escape" them using a backslash `\`.
 
+  All Special Characters :  "[ ]( ){ }* + ? | . ^ $ \\"
    Example:
    - To match a literal period, you would use `\.`.
 
