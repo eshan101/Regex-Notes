@@ -1,29 +1,57 @@
 ## This is just a revision file for regex
 
-. - Any character except New Line(Empty line)
-\d - Digit (0-9)
-\D - Not a Digit (0-9)
-\w - Word Character (a-z, A-Z, 0-9, _)
-\W - Not a Word Character
-\s - Whitespace (space, tab, newline)
-\S - Not Whitespace (space, tab, newline)
+. - Any character except New Line (Empty line)  
+\d - Digit (0-9)  
+\D - Not a Digit (0-9)  
+\w - Word Character (a-z, A-Z, 0-9, _)  
+\W - Not a Word Character  
+\s - Whitespace (space, tab, newline)  
+\S - Not Whitespace (space, tab, newline)  
 
-\b - Word Boundary
-\B - Not a Word Boundary 
-^ - Beginning of a String(line)
-$ - End of a String(line)
+\b - Word Boundary  
+\B - Not a Word Boundary  
+^ - Beginning of a String (line)  
+$ - End of a String (line)  
 
-[] - Matches Characters in brackets
-[^ ] - Matches Characters NOT in brackets
-| - Either Or
-() - This is a group 
+[] - Matches Characters in brackets  
+[^ ] - Matches Characters NOT in brackets  
+| - Either Or  
+() - This is a group  
 
-Quantifiers:
-* - 0 or More
-+ - 1 or More
-? - 0 or One
-{3} - Exact Number
-{3,4} - Range of Numbers (Minimum, Maximum)
+Quantifiers:  
+* - 0 or More  
++ - 1 or More  
+? - 0 or One  
+{n} - Exact Number  
+{n,} - At least n times  
+{n,m} - Range of Numbers (Minimum, Maximum)  
+
+Escaping:  
+\* - Match literal *  
+\+ - Match literal +  
+\? - Match literal ?  
+
+Anchors:  
+^ - Start of string/line  
+$ - End of string/line  
+
+Grouping:  
+() - Capture group for extracting matches  
+(?:) - Non-capturing group  
+
+Lookahead:  
+(?=...) - Assert that what follows matches...  
+
+Lookbehind:  
+(?<=...) - Assert that what precedes matches...  
+
+Greedy vs Lazy:  
+* / + : Greedy (match as much as possible)  
+*? / +? : Lazy (match as little as possible)  
+
+Flags/Modifiers:  
+i - Case-insensitive matching  
+g - Global matching
 
 ### Sample Regexs ###
 
