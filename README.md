@@ -9,10 +9,9 @@ Here’s a structured roadmap to help you learn regex (regular expressions) from
 1. **What is Regex?**
 2. **Literal Characters**
 3. **Meta-characters**
-4. **Character Classes**
-5. **Quantifiers**
-6. **Escaping Special Characters**
-7. **Anchors**
+4. **Quantifiers**
+5. **Escaping Special Characters**
+6. **Anchors**
 
 ---
 
